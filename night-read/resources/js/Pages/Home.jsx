@@ -1,7 +1,10 @@
+import Navbar from "../Components/Navbar.jsx";
+import Spotlight from "../Components/Spotlight.jsx";
 export default function Home() {
     return (
         <>
-            <h1 className="title">This is Home Page</h1>
+            <Navbar />
+            <Spotlight />
         </>
     );
 }

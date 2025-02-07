@@ -1,73 +1,125 @@
-/* Please note this document will be updated as time goes by. Thank you */
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
-    body {
-        font-family: "Poppins", sans-serif;
-    }
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-@layer components {
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    input[type="search"],
-    input[type="tel"],
-    input[type="url"],
-    textarea {
-        @apply block w-full rounded-md border-0 p-2 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-500 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm bg-white;
-    }
-    label {
-        @apply block text-sm font-medium leading-6 text-slate-900 first-letter:capitalize;
-    }
-    header {
-        @apply bg-slate-800 shadow-md;
-    }
-    nav {
-        @apply p-5 max-w-screen-lg mx-auto flex items-center justify-between;
-    }
-    main {
-        @apply max-w-screen-lg mx-auto;
-    }
-    .primary-btn {
-        @apply flex w-full justify-center rounded-md bg-blue-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:bg-slate-400 disabled:cursor-wait;
-    }
-    .text-link {
-        @apply font-semibold text-blue-500 hover:text-blue-600;
-    }
-    .nav-link {
-        @apply text-slate-200 hover:bg-slate-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium;
-    }
-    .title {
-        @apply my-6 text-center text-3xl font-bold leading-9 text-slate-900;
-    }
-    .error {
-        @apply text-xs text-red-500 mt-1;
-    }
-    table {
-        @apply w-full text-sm text-left rounded-md shadow-lg overflow-hidden mb-6 table-auto bg-white;
-    }
-    thead {
-        @apply text-xs uppercase font-medium border-b border-slate-100 text-slate-600;
-    }
-    tbody tr {
-        @apply hover:bg-slate-100 w-full p-0;
-    }
-    th {
-        @apply px-6 py-4;
-    }
-    td {
-        @apply px-6 py-4 border-b border-slate-100;
-    }
-    .avatar {
-        @apply w-8 h-8 rounded-full overflow-hidden object-center object-cover;
-    }
-    .round-btn {
-        @apply w-8 h-8 overflow-auto rounded-full bg-slate-100 focus:outline-none focus:ring-1 focus:ring-slate-100 focus:ring-offset-2 focus:ring-offset-slate-800;
-    }
+.navbar {
+    width: 90%;
+    height: 158px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.navbar-content {
+    background-color: #1e1e1e;
+    width: 100%;
+    height: 70%;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-logo {
+    width: 12%;
+    border-radius: 100px;
+    border: 1px solid black;
+    margin-right: 50px;
+}
+
+.navbar-middle {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-container {
+    width: 55%;
+    height: 80px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon {
+    width: 42px;
+    height: 42px;
+}
+
+.search-input {
+    width: 60%;
+    height: 80px;
+    font-family: "Libre Baskerville";
+    font-size: 2rem;
+    padding: 20px;
+    outline: none;
+    border: none;
+}
+
+.filter-btn {
+    background: #d9d9d9;
+    width: 20%;
+    height: 41px;
+    border-radius: 15px;
+    font-family: "Libre Baskerville";
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.login-btn {
+    background: #d9d9d9;
+    width: 20%;
+    height: 54px;
+    border-radius: 15px;
+    font-family: "Libre Baskerville";
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.spotlight-container {
+    position: relative;
+    width: 100%;
+    height: 780px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spotlight-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.spotlight-description-container {
+    position: absolute;
+    bottom: 0; /* Aligns to the bottom */
+    left: 0; /* Aligns to the left */
+    z-index: 1;
+    text-align: left;
+    width: 39%;
+    height: 55%;
+    background: white;
+    padding: 20px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    border: 10px solid black;
 }
