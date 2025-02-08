@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/*
 .navbar-container {
     display: flex;
     justify-content: center;
@@ -30,8 +31,8 @@
 }
 
 .navbar-logo {
-    width: 12%;
-    border-radius: 100px;
+    height: 150%;
+    border-radius: 100%;
     border: 1px solid black;
     margin-right: 50px;
 }
@@ -111,8 +112,8 @@
 
 .spotlight-description-container {
     position: absolute;
-    bottom: 0; /* Aligns to the bottom */
-    left: 0; /* Aligns to the left */
+    bottom: 0;
+    left: 0;
     z-index: 1;
     text-align: left;
     width: 39%;
@@ -122,4 +123,8 @@
     margin-left: 25px;
     margin-bottom: 25px;
     border: 10px solid black;
+}
+*/
+body {
+    font-family: Libre Baskerville;
 }

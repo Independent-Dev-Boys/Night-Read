@@ -3,7 +3,10 @@ import Spotlight from "../Components/Spotlight.jsx";
 export default function Home() {
     return (
         <>
-            <Navbar />
+            <header>
+                <Navbar />
+            </header>
+
             <Spotlight />
         </>
     );
